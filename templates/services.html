@@ -1,0 +1,296 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+        border: none;
+        border-radius: 15px;
+    }
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+    }
+    .service-image-wrapper {
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+    }
+    .service-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    .service-card:hover .service-image-wrapper img {
+        transform: scale(1.1);
+    }
+    .process-step {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        background: #0d6efd;
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+
+<section class="page-header py-5 text-white" 
+    style="
+     background: linear-gradient(to right, rgba(1, 18, 51, 0.8), rgba(1, 12, 29, 0.4)), 
+                    url('https://accutechcom.com/wp-content/uploads/2025/06/fiber-optic-network-cable.jpg.webp');
+        background-size: cover; 
+        background-position: center;
+        background-attachment: fixed;
+    ">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-3">Our Professional Services</h1>
+                <p class="lead text-light">Comprehensive networking and environmental solutions tailored to your business needs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-lg-7 pe-lg-5 order-2 order-lg-1">
+                <h2 class="fw-bold mb-4" style="color::rgb(33, 95, 66);">Structured Cabling & Fiber Optics</h2>
+                <div class="mb-4">
+                    <p class="text-secondary mb-3">
+                        We design and install high-performance <strong>structured cabling systems</strong> that serve as the backbone of your digital communication. From Copper (Cat5e, Cat6, Cat6a) to Fiber Optic solutions, we ensure seamless data flow across your organization.
+                    </p>
+                    <p class="text-secondary small">
+                        Our team follows TIA/EIA international standards to minimize downtime and maximize bandwidth efficiency. Whether you are setting up a new office or upgrading an existing data center, our precision-engineered cabling ensures your network is future-ready.
+                    </p>
+                </div>
+
+                <div class="p-4 rounded-3 border shadow-sm" style="border-color::rgb(33, 95, 66); background-color: #f8faff;">
+                    <h6 class="fw-bold mb-3" style="color:rgb(33, 95, 66) ;">Key Solutions:</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2 d-flex align-items-start small text-muted">
+                            <i class="bi bi-check2 text-primary me-3 mt-1 fw-bold"></i>
+                            <span>End-to-end Copper and Fiber Optic installation and splicing</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start small text-muted">
+                            <i class="bi bi-check2 text-primary me-3 mt-1 fw-bold"></i>
+                            <span>Data Center design and cable management (Rack & Stack)</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start small text-muted">
+                            <i class="bi bi-check2 text-primary me-3 mt-1 fw-bold"></i>
+                            <span>Fluke Testing and certification for guaranteed performance</span>
+                        </li>
+                        <li class="d-flex align-items-start small text-muted">
+                            <i class="bi bi-check2 text-primary me-3 mt-1 fw-bold"></i>
+                            <span>Cleanup and organization of messy server rooms/IDF cabinets</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-5 mb-4 mb-lg-0 order-1 order-lg-2">
+                <div class="position-relative p-2 p-md-3">
+                    <div class="position-absolute top-0 end-0 w-100 h-100 bg-primary rounded-4 mt-2 me-2" style="z-index: 0; opacity: 0.1;"></div>
+                    
+                    <div class="rounded-3 overflow-hidden shadow-lg position-relative" style="z-index: 1;">
+                        <img src="https://www.montdigital.com/admin/uploads/images/september20/251600332231.jpg" 
+                             class="img-fluid w-100" 
+                             alt="Structured Cabling" 
+                             style="object-fit: cover; max-height: 500px; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="m-0 opacity-10">
+
+<section class="py-5 bg-white border-top">
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="position-relative p-2 p-md-3">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary rounded-4 mt-2 ms-2" style="z-index: 0; opacity: 0.1;"></div>
+                    
+                    <div class="rounded-3 overflow-hidden shadow-lg position-relative" style="z-index: 1;">
+                        <img src="https://www.montdigital.com/admin/uploads/images/september20/471600332234.jpg" 
+                             class="img-fluid w-100" 
+                             alt="Network Infrastructure" 
+                             style="object-fit: cover; max-height: 500px; height: auto;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-7 ps-lg-5">
+                <h2 class="fw-bold mb-4" style="color:rgb(1, 61, 16);">Managed Network & IT Security</h2>
+                <div class="mb-4">
+                    <p class="text-secondary mb-3">
+                        R&J provides enterprise-grade <strong>network configuration and security</strong> to protect your digital assets. We specialize in building robust Wi-Fi networks and secure VPN connections for businesses of all sizes.
+                    </p>
+                    <p class="text-secondary small">
+                        From firewall deployment to active directory setup, we ensure that your internal systems are optimized and protected against unauthorized access. Our proactive monitoring helps detect bottlenecks before they affect your daily operations.
+                    </p>
+                </div>
+
+                <div class="p-4 rounded-3 border shadow-sm" style="border-color:rgb(33, 95, 66) !important; background-color: #f8faff;">
+                    <h6 class="fw-bold mb-3" style="color:rgb(6, 121, 63);">Scope of IT Services:</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2 d-flex align-items-start small text-muted">
+                            <i class="bi bi-check2 text-primary me-3 mt-1 fw-bold"></i>
+                            <span>Installation and configuration of Routers, Switches, and Firewalls</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start small text-muted">
+                            <i class="bi bi-check2 text-primary me-3 mt-1 fw-bold"></i>
+                            <span>Indoor and Outdoor High-Density Wi-Fi Solutions (Ubiquiti, Cisco, Aruba)</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start small text-muted">
+                            <i class="bi bi-check2 text-primary me-3 mt-1 fw-bold"></i>
+                            <span>CCTV Surveillance Systems and Biometric Access Control Integration</span>
+                        </li>
+                        <li class="d-flex align-items-start small text-muted">
+                            <i class="bi bi-check2 text-primary me-3 mt-1 fw-bold"></i>
+                            <span>24/7 Managed IT Support and Network Troubleshooting</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="m-0 opacity-10">
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">IT & Networking Solutions</h2>
+            <p class="text-muted">Reliable infrastructure for modern enterprises</p>
+        </div>
+        
+        <div class="row g-4 mb-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 service-card shadow-sm border-0">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Network Installation">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-3"><i class="bi bi-ethernet text-primary fs-2"></i></div>
+                        <h4 class="fw-bold">Network Installation</h4>
+                        <p class="text-muted small">Complete setup of enterprise network infrastructure and server management.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 service-card shadow-sm border-0">
+                    <div class="service-image-wrapper">
+                        <img src="./static/css/images/net.webp" class="card-img-top" alt="Structured Cabling">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-3"><i class="bi bi-hdd-network text-primary fs-2"></i></div>
+                        <h4 class="fw-bold">Structured Cabling</h4>
+                        <p class="text-muted small">Professional cable management using high-grade fiber and copper materials.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 service-card shadow-sm border-0">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Wireless Solutions">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-3"><i class="bi bi-wifi text-primary fs-2"></i></div>
+                        <h4 class="fw-bold">Wireless Solutions</h4>
+                        <p class="text-muted small">High-performance WiFi deployment with full coverage mapping.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 service-card shadow-sm border-0">
+                    <div class="service-image-wrapper">
+                        <img src="https://www.colocationamerica.com/wp-content/uploads/2019/08/internetproblems.jpg" class="card-img-top" alt="Network Troubleshooting">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-3"><i class="bi bi-tools text-primary fs-2"></i></div>
+                        <h4 class="fw-bold">Troubleshooting & Repair</h4>
+                        <p class="text-muted small">Expert diagnosis and fix for connectivity issues, packet loss, and hardware failures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 service-card shadow-sm border-0">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Network Security">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-3"><i class="bi bi-shield-lock text-primary fs-2"></i></div>
+                        <h4 class="fw-bold">Security & Firewall</h4>
+                        <p class="text-muted small">Implementation of robust firewalls and security protocols to prevent cyber threats.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 service-card shadow-sm border-0">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Network Maintenance">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-3"><i class="bi bi-gear-wide-connected text-primary fs-2"></i></div>
+                        <h4 class="fw-bold">Preventive Maintenance</h4>
+                        <p class="text-muted small">Regular system health checks and firmware updates to ensure 24/7 uptime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="m-0 opacity-10">
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Our Professional Process</h2>
+            <hr class="mx-auto border-primary border-3 opacity-100" style="width: 50px;">
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="p-4 border rounded-3 shadow-sm d-flex align-items-center flex-wrap flex-md-nowrap" style="border-color: #dee2e6; background-color: #f8f9ff;">
+                    
+                    <div class="me-md-4 mb-3 mb-md-0 text-center text-md-start">
+                        <img src="./static/css/images/logsa.webp" alt="Sea Marconi" style="max-height: 40px; width: auto;">
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <p class="mb-0 text-dark" style="line-height: 1.6;">
+                            Ang aming professional process ay binubuo ng 
+                            <strong>1. Consultation</strong> (analysis), 
+                            <strong>2. Planning</strong> (optimal design), 
+                            <strong>3. Execution</strong> (installation), at 
+                            <strong>4. Support</strong> (optimization). 
+                            Lahat ng ito ay isinasagawa ng Sea Marconi S.A.S of Italy upang matiyak ang highest quality sa mineral insulating oil management.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
